@@ -1,13 +1,23 @@
 /*Esto es un comentario*/
 
+body {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+    background-color: white !important;
+}
+
 .modBloque {
-    border: 3px;
-    border-color: black;
-    border-radius: 15px;
-    border-style: solid;
+    padding-bottom: 20px;
+}
+
+.cardShadow {
+    border: none !important;
+}
+
+.h5Padding {
+    padding-left: 2%;
 }
 
 .mrTexto {
-    margin-right: 200px;
-    margin-top: 50px;
+    margin: 2%
 }

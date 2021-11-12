@@ -12,6 +12,7 @@
     <title>Servicios</title>
 
 
+
     <!--Inicio Estilos tipo Interno-->
     <style>
         .textoCentrado {
@@ -267,21 +268,36 @@
             <hr>
 
             <!--Inicio Seccion Formulario-->
-            <div class="form textoCentrado">
+            <div class=" " style="padding-left: 15%; padding-right: 15%;">
 
+                <h3 class="textoCentrado">Contacto</h3>
+
+                <!--Inicio del formulario-->
                 <div>
-                    <label for="nombre">Nombres</label>
-                    <input id="nombre" type="text">
-                    <br>
-                    <label for="edad"> Edad</label>
-                    <input id="edad" type="number">
-                    <br>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombres</label>
+                            <input class="form-control" id="nombre" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="email" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono"> Teléfono</label>
+                            <input class="form-control" id="telefono" type="number">
+                        </div>
+                    </form>
 
                 </div>
+                <!--Fin del formulario-->
+
                 <br>
 
                 <div>
-                    <button class="btn btn-sm btn-success" onclick="mostarAlert()"> Guardar</button>
+                    <button class="btn btn-sm btn-success" onclick="mostarAlert() "> Enviar</button>
                 </div>
 
             </div>
@@ -294,22 +310,7 @@
 
     <script src="../resources/Bootstrap/jquery-3.5.1.slim.min.js"></script>
     <script src="../resources/Bootstrap/bootstrap.bundle.min.js"></script>
-
-    <script>
-        /*Inicializar Variables*/
-        var vNombre = "";
-        var vEdad = 0;
-
-        /*Establecer Variables*/
-        vNombre = "César Mantilla";
-        vEdad = 30;
-
-
-
-        function mostarAlert() {
-            alert("Hola " + vNombre + ", tengo " + vEdad + " años.");
-        }
-    </script>
+    <script src="../resources/js/script.js"></script>
 
 </body>
 

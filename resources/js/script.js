@@ -15,21 +15,29 @@ function mostarAlert() {
 
     //Validando mi primer input
     if (vNombre.length === 0) {
-        alert("Debe ingresar un nombre");
+        //alert("Debe ingresar un nombre");
+        document.getElementById("MsjNombre").innerHTML = "Debe ingresar un nombre"
         validaInput = false
     }
     //Validando mi segundo input
     if (vEmail.length === 0) {
-        alert("Debe ingresar un correo electronico");
+        //alert("Debe ingresar un correo electronico");
+        document.getElementById("MsjEmail").innerHTML = "Debe ingresar un correo electronico"
         validaInput = false
     }
     //Validando mi tercer input
     if (vTelefono.length === 0) {
-        alert("Debe ingresar un telefono de contacto");
+        //alert("Debe ingresar un telefono de contacto");
+        document.getElementById("MsjTelefono").innerHTML = "Debe ingresar un telefono de contacto"
         validaInput = false
     }
 
     if (validaInput == true) {
-        alert(vNombre + ", te estaremos respondiendo al siguiente correo " + vEmail + " o espera nuestra llamada al n° " + vTelefono);
+        //alert(vNombre + ", te estaremos respondiendo al siguiente correo " + vEmail + " o espera nuestra llamada al n° " + vTelefono);
+        document.getElementById("MsjResultado").innerHTML = vNombre + ", te estaremos respondiendo al siguiente correo " + vEmail + " o espera nuestra llamada al n* " + vTelefono;
+
+        document.getElementById("MsjNombre").innerHTML = "";
+        document.getElementById("MsjEmail").innerHTML = "";
+        document.getElementById("MsjTelefono").innerHTML = "";
     }
 }

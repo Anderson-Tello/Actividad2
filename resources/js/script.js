@@ -41,3 +41,16 @@ function mostarAlert() {
         document.getElementById("MsjTelefono").innerHTML = "";
     }
 }
+
+
+function fnCrearTarjeta() {
+
+    vNombre = $("#nombre").val();
+    let _In_Nombre = "";
+    let _In_Apellido = "";
+    let _In_Edad = "";
+
+    //document.getElementById() 
+
+
+}
